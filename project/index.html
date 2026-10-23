@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/color.css">
+    <title>Water Sports - Home</title>
+</head>
+<body>
+    <header>
+        <!--This bar is on each page, and display at the very top of the page always.
+        Additionally, the text will change color for the site you are on, and when hovering
+        over the other sites. -->
+        <nav id="main-navigation">
+            <ul>
+                <li><a href="index.html" id="current-page">Home</a></li>
+                <li><a href="ski.html">Water Skiing</a></li>
+                <li><a href="wake.html">Wakeboarding</a></li>
+                <li><a href="tube.html">Tubing</a></li>
+                <li><a href="knee.html">Kneeboarding</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Boat Water Sports</h1>
+        <img class="general-image" src="https://www.discoverboating.com/sites/default/files/watersports-slide-10.jpg" alt="Boat with flipping wakeboarder">
+        <div class="info">
+            <p>
+                Boat water sports are water-based recreational activities performed behind a boat or watercraft. This page will focus the tow-sports of
+                tubing, wakeboarding, water skiing, and kneeboarding. The rider is on some sort of device behind the boat and pulled using an attached rope.
+            </p>
+            <p>
+                Each sport uses a different way to ride behind the boat. Tubing is done on an inflatable tube, while water skiing uses one or two skis.
+                Kneeboarding is done on a small board while the rider is close to the water, and wakeboarding uses a wider board that the rider stands on.
+            </p>
+            <p>
+                These sports can be fun for people with different levels of experience, but it is important to stay safe. Riders should wear a life jacket
+                and listen to the driver, who should watch the rider and avoid other boats and obstacles.
+            </p>
+            <p>
+                To find out more about each of these sports, please use the navigation bar at the top to explore!
+            </p>
+        </div>
+        <div class="info quiz">
+            <form id="favorite-sport-quiz">
+                <p>Which of these four water sports is my favorite?</p>
+                <label><input type="radio" name="favorite-sport" value="tubing" required> Tubing</label><br>
+                <label><input type="radio" name="favorite-sport" value="wakeboarding"> Wakeboarding</label><br>
+                <label><input type="radio" name="favorite-sport" value="water-skiing"> Water skiing</label><br>
+                <label><input type="radio" name="favorite-sport" value="kneeboarding"> Kneeboarding</label><br><br>
+                <button type="submit">Check answer</button>
+            </form>
+        </div><br><br>
+    </main>
+    <footer>
+        <p>Site created by Clark James for IT301 Static Website Project at JMU.</p>
+        <!--Symbol below adds space but keeps it the same line-->
+        <p>Email: jamesct@dukes.jmu.edu&emsp;&emsp;&emsp;Section: IT301_0001_FA26</p>
+        <p>Image credits: <a href="https://www.discoverboating.com/activities/watersports">Discover Boating</a></p>
+        <p>Information credits: <a href="https://safeboatingamerica.com/blog/boater-sports-activities-safety-and-certification">Safe Boating America</a></p>
+    </footer>
+    <script>
+        //Learned how to do this from CS343
+        document.getElementById("favorite-sport-quiz").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const answer = new FormData(event.currentTarget).get("favorite-sport");
+            if (answer === "tubing") {
+                alert("Correct! Tubing is my favorite.");
+            } else {
+                alert("Incorrect, try again!");
+            }
+        });
+    </script>
+</body>
+</html>

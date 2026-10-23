@@ -1,0 +1,35 @@
+/*Hex colors from https://colorhunt.co/palette/0862884d8dba97d7ffffefc4*/
+body {
+    background-color:#97D7FF;
+}
+
+
+header {
+    background-color:#086288
+}
+#main-navigation a {
+    color:#FFEFC4;
+}
+#main-navigation #current-page {
+    color:#4D8DBA;
+}
+#main-navigation a:hover {
+    color:white;
+}
+
+h1 {
+    color:white;
+}
+.info {
+    border:white;
+    background-color:#FFEFC4;
+    color:#086288;
+}
+
+
+footer {
+    background-color:#086288;
+}
+footer p, footer p a{
+    color:#FFEFC4;
+}
